@@ -11,7 +11,10 @@ analyser uses the configuration file created by the AWS Cli
 ## Running
 
 'pipenv run python analyser/analyser.py'
+<--project=Project>
 
+*Command* is list, start, or stop
+*project* is optional
 
 
 ## Add user with no permission
@@ -37,4 +40,14 @@ ec2 = session.resource('ec2')
 
 ## use history of codes you typed by using %history
 %history
+
+## install click module before you import it
+pipenv install click
+import click
+
+## boto3 documentation
+https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
+## Click documentations
+https://click.palletsprojects.com/en/7.x/
 
