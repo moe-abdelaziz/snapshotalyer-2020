@@ -89,6 +89,7 @@ def create_snapshots(project):
     instances = filter_instances(project)
 
     for i in instances:
+        i.stop()
         for v in i.volumes.all():
             print("Creating snapshot of {0}".format(v.id))
             v.create_snapshots(Description="Created by analyser user")
