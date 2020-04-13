@@ -13,7 +13,8 @@ analyser uses the configuration file created by the AWS Cli
 'pipenv run python analyser/analyser.py'
 <--project=Project>
 
-*Command* is list, start, or stop
+*Command* is list, start, stops, snapshot
+*subcommand* - depends on 
 *project* is optional
 
 
