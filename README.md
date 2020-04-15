@@ -52,5 +52,11 @@ https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 ## Click documentations
 https://click.palletsprojects.com/en/7.x/
 
-## Packaging & creating distribution. Setup tools using the setup.py. We need to install setuptools
+## Packaging & creating distribution. Setup tools using the setup.py. We need to install setuptools. Users will be able to install your package using the setup.py
 pipenv install -d setuptools
+## we need to generat a wheel bdist_wheel command (an archive that let your Python code go places)
+pipenv run python setup.py bdist_wheel
+## install your dist
+pip3 install dist/snapalyser
+## Uninstall it so you can then install it using the S3 dist
+pip3 uninstall snapshotalyser
