@@ -52,3 +52,5 @@ https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 ## Click documentations
 https://click.palletsprojects.com/en/7.x/
 
+## Packaging & creating distribution. Setup tools using the setup.py. We need to install setuptools
+pipenv install -d setuptools
